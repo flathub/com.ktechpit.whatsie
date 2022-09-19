@@ -49,3 +49,7 @@ modules:
       - type: git
         url: https://github.com/keshavbhatt/whatsie.git
         tag: v4.10.1
+      - type: file
+        path: dist/linux/com.ktechpit.whatsie.metainfo.xml
+    post-install:
+      - install -Dm644 com.ktechpit.whatsie.metainfo.xml ${FLATPAK_DEST}/share/metainfo/com.ktechpit.whatsie.metainfo.xml
