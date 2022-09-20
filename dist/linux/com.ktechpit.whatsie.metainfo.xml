@@ -7,7 +7,10 @@
 	<summary>Qt Whatsapp Web Client for Linux Desktop</summary>
 	<developer_name>Keshav Bhatt</developer_name>
 	<description>
-		<p>Feature rich WhatsApp web client based on Qt WebEngine. WhatSie is packed with lots of goodies, there are many features which are unique in WhatSie most notably the App Lock feature that allows users to set app lock passcode to lock the app so that someone cannot open and access your whatsapp messages while you are away from you laptop or system.</p>
+		<p>Feature rich WhatsApp web client based on Qt WebEngine. WhatSie is packed with lots of goodies,
+		 there are many features which are unique in WhatSie most notably the App Lock feature that allows
+		 users to set app lock passcode to lock the app so that someone cannot open and access your whatsapp
+		 messages while you are away from you laptop or system.</p>
 		<p>Key features of Whatsie:</p>
 		<ul>
 			<li>Light and Dark Themes with automatic switching</li>
