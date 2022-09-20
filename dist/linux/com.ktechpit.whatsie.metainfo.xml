@@ -10,38 +10,25 @@
 		<p>Feature rich WhatsApp web client based on Qt WebEngine.</p>
 		<p>Key features of Whatsie:</p>
 		<ul>
-			<li>Light and Dark Themes with automatic switching</li>
-			<li>Customized Notifications &amp; Native Notifications</li>
-			<li>Keyboard Shortcuts</li>
-			<li>BuiltIn download manager</li>
-			<li>Mute Audio, Disable Notifications</li>
-			<li>App Lock feature</li>
-			<li>Hardware access permission manager</li>
-			<li>Built in Spell Checker (with support for 31 Major languages)</li>
+		   <li>Light and Dark Themes with automatic switching</li>
+		   <li>Customized Notifications &amp; Native Notifications</li>
+		   <li>Global App shortcuts</li>
+		   <li>BuiltIn download manager</li>
+		   <li>Mute Audio, Disable Notifications</li>
+		   <li>App Lock feature</li>
+		   <li>Built in Spell Checker (with support for 31 Major languages)</li>
 		</ul>
-			<p>Other settings that let you control every aspect of WebApp like:</p>
-			<ul>
-				<li>Do not disturb mode</li>
-				<li>Full view mode, lets you expand the main view to the full width of the window</li>
-				<li>Ability to switch between Native &amp; Custom notification</li>
-				<li>Configurable notification popup timeout</li>
-				<li>Mute all audio from Whatapp</li>
-				<li>Disabling auto playback of media</li>
-				<li>Minimize to tray on application start</li>
-				<li>Toggle to enable single click hide to the system tray</li>
-				<li>Switching download location</li>
-				<li>Enable disable app lock on application start</li>
-				<li>Auto-locking after a certain interval of time</li>
-				<li>App lock password management</li>
-				<li>Widget styling</li>
-				<li>Configurable auto Theme switching based on day night time</li>
-				<li>Configurable close button action</li>
-				<li>Global App shortcuts</li>
-				<li>Permission manager let you toggle camera mic and other hardware level permissions</li>
-				<li>Configurable page zoom factor, switching based on window state maximized on normal </li>
-				<li>Configurable App User Agent</li>
-				<li>Application Storage management, lets you clean residual cache and persistent data</li>
-			</ul>
+		<p>Other settings that let you control every aspect of WebApp like:</p>
+		<ul>
+		   <li>Do not disturb mode</li>
+		   <li>Full view mode, lets you expand the main view to the full width of the window</li>
+		   <li>Ability to switch between Native &amp; Custom notification</li>
+		   <li>Configurable notification popup timeout</li>
+		   <li>Mute all audio from Whatapp</li>
+		   <li>Minimize to tray on application start</li>
+		   <li>Enable disable app lock on application start</li>
+		   <li>Auto-locking after a certain interval of time</li>
+		</ul>
 	</description>
 	<launchable type="desktop-id">com.ktechpit.whatsie.desktop</launchable>
 	<url type="homepage">https://github.com/keshavbhatt/whatsie</url>
