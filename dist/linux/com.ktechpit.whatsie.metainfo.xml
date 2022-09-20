@@ -42,25 +42,6 @@
 				<li>Configurable App User Agent</li>
 				<li>Application Storage management, lets you clean residual cache and persistent data</li>
 			</ul>
-
-		<p>Command line options:</p>
-		Comes with general CLI support, with a bunch of options that let you interact with already running instances of Whatsie.
-		<p>Run: whatsie -h to see all supported options
-		Usage: whatsie [options]
-
-		Options:
-		-h, --help           Displays help on commandline options
-		-v, --version        Displays version information.
-		-b, --build-info     Shows detailed current build infomation
-		-w, --show-window    Show main window of runninginstance of WhatSie
-		-s, --open-settings  Opens Settings dialog in a runninginstance of WhatSie
-		-l, --lock-app       Locks a runninginstance of WhatSie
-		-i, --open-about     Opens About dialog in a runninginstance of WhatSie
-		-t, --toggle-theme   Toggle between dark &amp; light theme in a runninginstance
-							 of WhatSie
-		-r, --reload-app     Reload the app in a runninginstance of WhatSie
-		-n, --new-chat       Opennew chat prompt in a runninginstance of WhatSie
-		</p>
 	</description>
 	<launchable type="desktop-id">com.ktechpit.whatsie.desktop</launchable>
 	<url type="homepage">https://github.com/keshavbhatt/whatsie</url>
