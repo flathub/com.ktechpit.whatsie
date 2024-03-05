@@ -1,9 +1,9 @@
 app-id: com.ktechpit.whatsie
 runtime: org.kde.Platform
-runtime-version: 5.15-22.08
+runtime-version: 5.15-23.08
 sdk: org.kde.Sdk
 base: io.qt.qtwebengine.BaseApp
-base-version: 5.15-22.08
+base-version: 5.15-23.08
 command: whatsie
 finish-args:
   - --device=all
