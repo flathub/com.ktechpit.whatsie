@@ -53,3 +53,4 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^(v[\d.]+)$
+#END 2024-03-19
