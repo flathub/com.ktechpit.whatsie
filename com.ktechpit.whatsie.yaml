@@ -1,26 +1,18 @@
 app-id: com.ktechpit.whatsie
-runtime: org.kde.Platform
-runtime-version: 5.15-24.08
-sdk: org.kde.Sdk
 base: io.qt.qtwebengine.BaseApp
-base-version: 5.15-24.08
+base-version: '6.10'
+runtime: org.kde.Platform
+runtime-version: '6.10'
+sdk: org.kde.Sdk
 command: whatsie
 finish-args:
   - --device=all
-  - --env=PACKAGE_TYPE=flatpak
-  - --env=QTWEBENGINEPROCESS_PATH=/app/bin/QtWebEngineProcess
-  - --env=QTWEBENGINE_DICTIONARIES_PATH=/app/qtwebengine_dictionaries
-  - --filesystem=xdg-desktop
-  - --filesystem=xdg-documents
-  - --filesystem=xdg-download
-  - --filesystem=xdg-music
-  - --filesystem=xdg-pictures
-  - --filesystem=xdg-videos
   - --share=network
   - --share=ipc
   - --socket=fallback-x11
   - --socket=wayland
   - --socket=pulseaudio
+  - --device=dri
 
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
@@ -35,22 +27,15 @@ cleanup-commands:
 
 modules:
   - name: whatsie
-    buildsystem: qmake
-    subdir: src/
-    build-options:
-      env:
-        - QMAKEPATH=/app/lib
+    buildsystem: cmake-ninja
     config-opts:
-      - QMAKE_INCDIR+=/app/include/QtWebEngine
-      - QMAKE_INCDIR+=/app/include/QtWebEngineCore
-      - QMAKE_INCDIR+=/app/include/QtWebEngineWidgets
-      - CONFIG+=FLATPAK
+      - -DCMAKE_BUILD_TYPE=Release
+      - CONFIG+=FLATPAK_BUILD
     sources:
       - type: git
         url: https://github.com/keshavbhatt/whatsie.git
-        tag: v4.16.3
-        commit: 20eef260be5db4ce728c42b58432578fae003c16
+        tag: v5.0.0
+        commit: 3e1c02a792eda20552e5311b9d8c1e090d590cf4
         x-checker-data:
           type: git
           tag-pattern: ^(v[\d.]+)$
-#END 2024-09-14
