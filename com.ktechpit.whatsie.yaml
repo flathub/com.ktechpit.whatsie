@@ -41,8 +41,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/keshavbhatt/whatsie.git
-        tag: v5.1.0
-        commit: 004863f3325274f9eecff4c2061cfb2dd6269f84
+        tag: v6.0.0
+        commit: aee188b3ac887765dfb2f13b22841f14a8fc910d
         x-checker-data:
           type: git
           tag-pattern: ^(v[\d.]+)$
