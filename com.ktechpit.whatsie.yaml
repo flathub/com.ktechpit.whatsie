@@ -33,11 +33,37 @@ cleanup-commands:
   - /app/cleanup-BaseApp.sh
 
 modules:
+  # Hunspell dictionaries for spell check. org.kde.Sdk only ships en_US, so
+  # bundle a language set (matching the snap) from LibreOffice/dictionaries;
+  # whatsie's build converts these to Chromium .bdic (issue #353).
+  - name: hunspell-dictionaries
+    buildsystem: simple
+    build-commands:
+      - install -Dm644 en/en_US.dic /app/share/hunspell/en_US.dic
+      - install -Dm644 en/en_US.aff /app/share/hunspell/en_US.aff
+      - install -Dm644 en/en_GB.dic /app/share/hunspell/en_GB.dic
+      - install -Dm644 en/en_GB.aff /app/share/hunspell/en_GB.aff
+      - install -Dm644 de/de_DE_frami.dic /app/share/hunspell/de_DE.dic
+      - install -Dm644 de/de_DE_frami.aff /app/share/hunspell/de_DE.aff
+      - install -Dm644 es/es_ES.dic /app/share/hunspell/es_ES.dic
+      - install -Dm644 es/es_ES.aff /app/share/hunspell/es_ES.aff
+      - install -Dm644 fr_FR/dictionaries/fr.dic /app/share/hunspell/fr_FR.dic
+      - install -Dm644 fr_FR/dictionaries/fr.aff /app/share/hunspell/fr_FR.aff
+      - install -Dm644 it_IT/it_IT.dic /app/share/hunspell/it_IT.dic
+      - install -Dm644 it_IT/it_IT.aff /app/share/hunspell/it_IT.aff
+      - install -Dm644 ru_RU/ru_RU.dic /app/share/hunspell/ru_RU.dic
+      - install -Dm644 ru_RU/ru_RU.aff /app/share/hunspell/ru_RU.aff
+    sources:
+      - type: archive
+        url: https://github.com/LibreOffice/dictionaries/archive/32b006a2c22a4ac7e8ed3f03346f7b3d85a970a4.tar.gz
+        sha256: cbd790eca560de5e8ec8bd64117a00dfd0bc06b091c8f52d23e44ea00d3e8461
+
   - name: whatsie
     buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
       - -DWHATSIE_BUILD_TESTS=OFF
+      - -DWHATSIE_HUNSPELL_DIR=/app/share/hunspell
     sources:
       - type: git
         url: https://github.com/keshavbhatt/whatsie.git
