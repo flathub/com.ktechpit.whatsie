@@ -53,6 +53,8 @@ modules:
       - install -Dm644 it_IT/it_IT.aff /app/share/hunspell/it_IT.aff
       - install -Dm644 ru_RU/ru_RU.dic /app/share/hunspell/ru_RU.dic
       - install -Dm644 ru_RU/ru_RU.aff /app/share/hunspell/ru_RU.aff
+      - install -Dm644 uk_UA/uk_UA.dic /app/share/hunspell/uk_UA.dic
+      - install -Dm644 uk_UA/uk_UA.aff /app/share/hunspell/uk_UA.aff
     sources:
       - type: archive
         url: https://github.com/LibreOffice/dictionaries/archive/32b006a2c22a4ac7e8ed3f03346f7b3d85a970a4.tar.gz
@@ -67,8 +69,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/keshavbhatt/whatsie.git
-        tag: v6.1.1
-        commit: 1086d7eca4ed36c6b898353bc6c6468d32f82ff4
+        tag: v6.2.0
+        commit: ddf84fe9bb30374712d71c11217b49eacb31f350
         x-checker-data:
           type: git
           tag-pattern: ^(v[\d.]+)$
