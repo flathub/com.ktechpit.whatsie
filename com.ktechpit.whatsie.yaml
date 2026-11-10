@@ -22,6 +22,7 @@ finish-args:
   - --system-talk-name=org.freedesktop.UPower.*
 
   # download and upload directories for convenience
+  - --filesystem=home:ro
   - --filesystem=xdg-desktop
   - --filesystem=xdg-documents
   - --filesystem=xdg-download
